@@ -151,3 +151,76 @@ header nav {
 .profileButtons button:hover {
     background: #429e4b;
 }
+
+.social {
+    height: 75px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.socialWrapper {
+    height: 65px;
+    width: 65px;
+    background: #888888;
+    border-radius: 50%;
+    display: grid; 
+    place-items: center;
+}
+
+.socialWrapper a img {
+    width: 40px;
+    height: 40px;
+}
+
+.about {
+    display: flex;
+    text-align: start;
+    max-height: 280px;
+    margin-bottom: 200px;
+}
+
+.aboutSection {
+    padding: 30px 20px;
+}
+
+.aboutFirst {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionProp {
+    border-radius: 5px;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2);
+    margin: 0 40px;
+}
+
+.aboutP, .aboutSection h2 {
+    margin-bottom: 30px;
+}
+
+.aboutSection p { 
+    font-size: 15px;
+}
+
+.aboutSection div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.aboutInfo {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.skills {
+    
+}
+
+.margin {
+    margin-top: 100px;
+}
