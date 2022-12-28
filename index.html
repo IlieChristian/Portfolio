@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet">
     <title>Christian Ilie</title>
 </head>
 <body>
@@ -37,8 +38,8 @@
                         <h1 class="profileName">Christian Ilie</h1>
                         <p class="profileDescription">Entry Level Front-End Web Developer</p>
                         <div class="profileButtons">
-                            <button>Hire Me</button>
-                            <button>Download CV</button>
+                            <button data-aos="zoom-in" data-aos-duration="500">Hire Me</button>
+                            <button data-aos="zoom-in" data-aos-duration="500">Download CV</button>
                         </div>
                     </div>
                 </div>
@@ -49,7 +50,7 @@
                 </div>
             </div>
             <div class="mainContainer">
-                <section class="about sectionProp">
+                <section class="about sectionProp" id="About" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
                     <div class="aboutSection aboutFirst">
                         <h2>About</h2>
                         <p class="aboutP">Hello! I am Anthony Barnett. Web Developer, Graphic Designer and Photographer.</p>
@@ -79,8 +80,8 @@
                         </div>
                     </div>
                 </section>
-                <h2 class="sectionTitle">Professional Skills</h2>
-                <section class="sectionProp">
+                <h2 class="sectionTitle" id="Skills">Professional Skills</h2>
+                <section class="sectionProp" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
                     <div class="skills ">
                         <div class="progressContainer">
                             <span class="progressName">HTML</span>
@@ -126,6 +127,55 @@
                         </div>
                     </div>
                 </section>
+                <h2 class="sectionTitle" id="Portfolio">Portfolio</h2>
+                <section class="sectionProp portfolio">
+                    <div class="portfolioContainer">
+                        <div class="portfolioBox" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            <a href="#TODO">
+                                <figure class="figure">
+                                    <img class="portfolioImg" src="images/project-1.webp" alt=""/>
+                                    <figcaption class="figcaption">
+                                        <h3>Recent Project</h3>
+                                        <p>web development</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="portfolioBox" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            <a href="#TODO">
+                                <figure class="figure">
+                                    <img class="portfolioImg" src="images/project-2.webp" alt=""/>
+                                    <figcaption class="figcaption">
+                                        <h3>Startup Project</h3>
+                                        <p>web development</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="portfolioBox" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            <a href="#TODO">
+                                <figure class="figure">
+                                    <img class="portfolioImg" src="images/project-3.webp" alt=""/>
+                                    <figcaption class="figcaption">
+                                        <h3>Food Order Project</h3>
+                                        <p>web development</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="portfolioBox" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                            <a href="#TODO">
+                                <figure class="figure">
+                                    <img class="portfolioImg" src="images/project-4.webp" alt=""/>
+                                    <figcaption class="figcaption">
+                                        <h3 class="portfolioTitle">Web Advertising Project</h3>
+                                        <p>web development</p>
+                                    </figcaption>
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
     </main>
@@ -133,5 +183,7 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
