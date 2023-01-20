@@ -449,7 +449,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 .contact {
-    background: url(/images/map.webp);
+    background: url(images/googlemap.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
