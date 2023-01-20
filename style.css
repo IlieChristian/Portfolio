@@ -604,15 +604,15 @@ input:focus, textarea:focus {
 
 footer {
     background-color: #378c3f;
-    height: 80px;
     width: 100%;
+    padding: 20px 0;
 }
 
 .footersocial {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 20px 0px;
+    margin-bottom: 20px;
 }
 
 .footername {
