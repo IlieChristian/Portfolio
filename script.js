@@ -6,6 +6,7 @@ let section3 = document.getElementById("section-3");
 let section4 = document.getElementById("section-4");
 let section5 = document.getElementById("section-5");
 let hamburger = document.getElementById("hamburger");
+let navContainer = document.querySelector(".navContainer")
 const nav = 100;
 
 window.onscroll = () => {
@@ -36,6 +37,6 @@ button[4].addEventListener('click', () => {
 })
 
 hamburger.addEventListener('click', () => {
-  
   hamburger.classList.toggle("is-active");
+  navContainer.classList.toggle("active");
 })
