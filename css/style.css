@@ -45,10 +45,6 @@ body {
     position: relative;
 }
 
-h2 { 
-    color: #378c3f;
-}
-
 header {
     position: sticky;
     top: 0;
@@ -110,8 +106,12 @@ header nav {
     background: rgba(156, 156, 156, 0.7);
 }
 
+.hamburger {
+    display: none !important;
+}
+
 .profile {
-    height: 60vh;
+    height: max(450px,60vh);
     background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.3));
     display: flex;
     justify-content: center;
@@ -119,7 +119,7 @@ header nav {
 }
 
 .profileBackground {
-    background-image: url('images/background.webp');
+    background-image: url('../images/background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -238,7 +238,6 @@ header nav {
 
 .aboutSection {
     padding: 30px 20px;
-    color: #378c3f;
 }
 
 .aboutFirst {
@@ -251,7 +250,7 @@ header nav {
     border-radius: 5px;
     box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.2);
     margin: 0 40px;
-    width: 60%;
+    width: max(850px,60%);
     position: relative;
 }
 
@@ -445,7 +444,6 @@ progress[value]::-webkit-progress-bar {
     width: 75%;
     text-align: start;
     padding: 25px;
-    color: #378c3f;
 }
 
 .expseccard h4 {
@@ -459,7 +457,7 @@ progress[value]::-webkit-progress-bar {
 }
 
 .contact {
-    background: url(images/googlemap.webp);
+    background: url(../images/googlemap.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -492,7 +490,6 @@ progress[value]::-webkit-progress-bar {
 }
 
 .contformname {
-    color: #378c3f;
     margin-bottom: 20px;
 }
 
@@ -575,10 +572,6 @@ input:focus, textarea:focus {
     border-radius: 4px;
 }
 
-.secondsect {
-    color: #378c3f;
-}
-
 .detailbox {
     margin-bottom: 30px;
 }
@@ -589,7 +582,7 @@ input:focus, textarea:focus {
 
 .detail {
     line-height: 2;
-    color: #378c3f;
+    color: #000;
     position: relative;
 }
 
@@ -627,4 +620,28 @@ footer {
 
 .footername {
     color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .sectionProp {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block !important;
+    }
+    
+    .navContainer {
+        display: none;
+    }
+    
+    .navList {
+        flex-direction: column;
+    }
 }
