@@ -76,7 +76,7 @@ header nav {
 }
 
 .navTitle a {
-    font-size: 1em;
+    font-size: 1rem;
     color: white;
     padding: 6px 12px;
 }
@@ -95,7 +95,7 @@ header nav {
     background-color: #00000000;
     padding: 10px 12px;
     text-transform: uppercase;
-    font-size: .85em;
+    font-size: .85rem;
     text-shadow: 0 0 10px black;
     transition: all 300ms ease 0s;
     margin-right: 5px;
@@ -107,7 +107,7 @@ header nav {
 }
 
 .profile {
-    height: max(450px,60vh);
+    height: max(500px,60vh);
     background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(55, 140, 63, 0.3));
     display: flex;
     justify-content: center;
@@ -149,12 +149,12 @@ header nav {
 }
 
 .profileName {
-    font-size: 2.25em;
+    font-size: 2.25rem;
 }
 
 .profileDescription { 
     text-transform: uppercase;
-    font-size: .85em;
+    font-size: .85rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -260,7 +260,7 @@ header nav {
 }
 
 .aboutSection p { 
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .aboutSection div {
@@ -286,7 +286,7 @@ header nav {
 }
 
 .sectionTitle {
-    margin: 100px 0 30px;
+    margin: 100px 10px 30px;
 }
 
 progress {
@@ -358,14 +358,14 @@ progress[value]::-webkit-progress-bar {
 }
 
 .figcaption h3 { 
-    font-size: 27px;
+    font-size: 1.728rem;
     font-weight: 500;
     margin-bottom: 10px;
     
 }
 
 .figcaption p { 
-    font-size: 14px;
+    font-size: 0.878rem;
     text-transform: uppercase;
 }
 
@@ -427,13 +427,13 @@ progress[value]::-webkit-progress-bar {
 }
 
 .expfirstcard p {
-    font-size: 14px;
+    font-size: 0.878rem;
     margin-bottom: 20px;
 }
 
 .expfirstcard h4 {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.296rem;
 }
 
 .expseccard {
@@ -444,12 +444,12 @@ progress[value]::-webkit-progress-bar {
 
 .expseccard h4 {
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 1.296rem;
     font-weight: 500;
 }
 
 .expseccard p {
-    font-size: 14px;
+    font-size: 0.878rem;
 }
 
 .contact {
@@ -457,7 +457,6 @@ progress[value]::-webkit-progress-bar {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 600px;
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -467,8 +466,8 @@ progress[value]::-webkit-progress-bar {
 
 .contcontainer { 
     background-color: #fff;
-    width: 40%;
     padding: 50px 0px;
+    margin: 40px 0;
 }
 
 .conttitle {
@@ -629,7 +628,28 @@ footer {
 
     .sectionProp {
         width: 90%;
+        padding: 5px;
     }
+
+    .aboutSection div {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .contcontainer {
+        padding: 20px 0;
+    }
+
+    .expbox {
+        padding: 0;
+    }
+
+    .aboutSection {
+        width: 100%;
+    } 
 }
 
 @media (max-width: 768px) {
@@ -640,14 +660,62 @@ footer {
     .navContainer {
         display: none;
         position: absolute;
-        right: 60px;
+        right: 0px;
         top: 70px;
         background-color: #378c3f;
-        padding: 20px;
+        padding: 20px 40px;
     }
     
-    .navList {
+    .navList, .expbox, .contbox {
         flex-direction: column;
+    }
+
+    .navList li {
+        margin: 5px 0;
+    }
+
+    .skills, .portfolioContainer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .expbox div {
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .contbox {
+        gap: 20px;
+    }
+
+    .contbox section{ 
+        width: 100%;
+    }
+
+    .profileContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 498px) {
+    .profileButtons button:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .profileContainer { 
+        margin-top: 20px;
+    }
+
+    .aboutSection div {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 300px) {
+    .secondsect {
+        padding: 0 10px !important;
     }
 }
 
