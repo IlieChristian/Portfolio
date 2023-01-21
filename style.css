@@ -96,6 +96,7 @@ header nav {
 
 .navListLink {
     color: white;
+    background-color: #00000000;
     padding: 10px 12px;
     text-transform: uppercase;
     font-size: .85em;
@@ -195,6 +196,15 @@ header nav {
     border-radius: 50%;
     display: grid; 
     place-items: center;
+}
+
+.socialWrapperImg {
+    width: 45px;
+    height: 45px;
+}
+
+.socialWrapperLink {
+    border-radius: 50%;
 }
 
 .git {
