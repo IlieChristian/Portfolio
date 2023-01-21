@@ -621,104 +621,6 @@ footer {
     display: block !important;
 }
 
-@media (max-width: 1024px) {
-    .about {
-        flex-direction: column;
-    }
-
-    .sectionProp {
-        width: 90%;
-        padding: 5px;
-    }
-
-    .aboutSection div {
-        grid-template-columns: 1fr 2fr;
-    }
-
-    body {
-        font-size: 18px;
-    }
-
-    .contcontainer {
-        padding: 20px 0;
-    }
-
-    .expbox {
-        padding: 0;
-    }
-
-    .aboutSection {
-        width: 100%;
-    } 
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: block !important;
-    }
-    
-    .navContainer {
-        display: none;
-        position: absolute;
-        right: 0px;
-        top: 70px;
-        background-color: #378c3f;
-        padding: 20px 40px;
-    }
-    
-    .navList, .expbox, .contbox {
-        flex-direction: column;
-    }
-
-    .navList li {
-        margin: 5px 0;
-    }
-
-    .skills, .portfolioContainer {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .expbox div {
-        width: 100%;
-        border-top-right-radius: 5px;
-        border-bottom-left-radius: 0px;
-    }
-
-    .contbox {
-        gap: 20px;
-    }
-
-    .contbox section{ 
-        width: 100%;
-    }
-
-    .profileContainer {
-        width: 90%;
-    }
-}
-
-@media (max-width: 498px) {
-    .profileButtons button:nth-child(1) {
-        margin-bottom: 10px;
-    }
-
-    .profileContainer { 
-        margin-top: 20px;
-    }
-
-    .aboutSection div {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-}
-
-@media (max-width: 300px) {
-    .secondsect {
-        padding: 0 10px !important;
-    }
-}
-
 .hamburger {
     display: none;
     cursor: pointer;
@@ -826,3 +728,102 @@ footer {
     transform: translate3d(-80px, 80px, 0) rotate(-45deg);
     transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); 
 }
+
+@media (max-width: 1024px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .sectionProp {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .aboutSection div {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .contcontainer {
+        padding: 20px 0;
+    }
+
+    .expbox {
+        padding: 0;
+    }
+
+    .aboutSection {
+        width: 100%;
+    } 
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block !important;
+    }
+    
+    .navContainer {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        background-color: #378c3f;
+        padding: 20px 40px;
+    }
+    
+    .navList, .expbox, .contbox {
+        flex-direction: column;
+    }
+
+    .navList li {
+        margin: 5px 0;
+    }
+
+    .skills, .portfolioContainer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .expbox div {
+        width: 100%;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .contbox {
+        gap: 20px;
+    }
+
+    .contbox section{ 
+        width: 100%;
+    }
+
+    .profileContainer {
+        width: 90%;
+    }
+}
+
+@media (max-width: 498px) {
+    .profileButtons button:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .profileContainer { 
+        margin-top: 20px;
+    }
+
+    .aboutSection div {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 300px) {
+    .secondsect {
+        padding: 0 10px !important;
+    }
+}
+
