@@ -80,6 +80,8 @@ header nav {
     font-size: 1rem;
     color: white;
     padding: 6px 12px;
+    border: 2px solid white;
+    border-radius: 8px;
 }
 
 .navContainer {
@@ -284,6 +286,7 @@ header nav {
 
 .aboutSection p { 
     font-size: 1rem;
+    text-indent: 10px;
 }
 
 .aboutSection div {
@@ -426,12 +429,14 @@ progress[value]::-webkit-progress-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .expbox {
     margin: 20px;
     display: flex;
     min-height: 200px;
+    width: max(1000px,60%);
     overflow: hidden;
 }
 
@@ -471,7 +476,29 @@ progress[value]::-webkit-progress-bar {
     font-weight: 500;
 }
 
-.expseccard p {
+.expseccard ul {
+    font-size: 0.878rem;
+}
+
+.expseccard ul li::before{
+    content: '-';
+
+}
+
+.edubox {
+    min-height: 140px;
+}
+
+.educard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.school {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #9A9A9A;
     font-size: 0.878rem;
 }
 
