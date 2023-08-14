@@ -40,3 +40,7 @@ hamburger.addEventListener('click', () => {
   hamburger.classList.toggle("is-active");
   navContainer.classList.toggle("active");
 })
+
+function downloadCV() {
+  window.open("cv_ilie_christian.pdf")
+}
