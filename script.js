@@ -42,5 +42,5 @@ hamburger.addEventListener('click', () => {
 })
 
 function downloadCV() {
-  window.open("cv_ilie_christian.pdf")
+  window.open("CV_Ilie_Christian_ro.pdf")
 }
